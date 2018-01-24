@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+i {
+    font-style: normal
+}
+
+b {
+    font-weight: 400
+}
+
+q {
+    quotes: none
+}
+
+.neo-hAlign {
+    margin: 0 auto;
+    text-align: center
+}
+
+.neo-logTitle {
+    border-bottom: 1px solid #8dc5e0;
+    margin-top: 1rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-family: '宋体';
+    color: #ebf4fd
+}
+
+.neo-lightBlue {
+    color: #54c7f1!important
+}
+
+.neo-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    box-sizing: border-box
+}
+
+.neo-btn-block {
+    width: 100%
+}
+
+.neo-btn-shadow {
+    color: #fff;
+    background-color: rgba(69, 140, 203, 0)!important;
+    border-color: rgba(69, 140, 203, 0)!important;
+    border-radius: 4px!important;
+    box-shadow: 0 0 4px 0 rgba(6, 42, 74, .56)!important;
+    font-size: 1.6rem
+}
+
+.neo-inputBtn {
+    color: #fff;
+    background-color: #7fc6df;
+    text-shadow: 0 0 2px #266277
+}
+
+.neo-shadow {
+    background: 0 0;
+    width: 90%;
+    margin: 6rem auto;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 #003e71
+}
