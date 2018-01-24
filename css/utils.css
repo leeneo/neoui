@@ -1,0 +1,113 @@
+/*
+* Author:Neo 
+* Contact:leeneo@xingzhihen.com
+* Site:xingzhihen.com
+*/
+
+
+/* 渐隐效果 */
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+
+/* 模态遮罩 */
+
+.modal-backdrop {
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.border div {
+    border: 1px solid #999;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* 颜色样式 */
+
+.bgColor-gray {
+    background-color: #495960;
+    color: aliceblue;
+}
+
+.bgColor-lightblack {
+    color: wheat;
+    background-color: #3c3636;
+}
+
+.bgColor-blue {
+    background-color: #307ba0;
+    color: chartreuse;
+}
+
+.bgColor-green-blue {
+    color: #14f0f0;
+    background: #225a4b;
+}
+
+/*表单验证*/
+
+form {
+    margin-top: 1rem;
+}
+
+.neo-sub {
+    float: right;
+    margin: 6% auto;
+    opacity: .6;
+    width: 100px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+    .neo-sub:hover {
+        opacity: 1;
+        background-color: rgb(133, 173, 21);
+        color: white;
+    }
+
+.help-block {
+    outline: 1px dotted #a94442;
+    outline-offset: 4px;
+    margin-left: 6px;
+    display: none;
+}
+
+/*其他小样式*/
+.padding-left-2px {
+    padding-left: 2px;
+}
+
+.btn-bgRed {
+    color: #fff;
+    background-color: #b73333;
+    border-color: #b73333;
+    width: 100px;
+    opacity: .6;
+}
+
+.btn-bgLightBlue {
+    opacity: .6;
+    width: 100px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}

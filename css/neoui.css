@@ -1,0 +1,137 @@
+/*
+* Author:Neo 
+* Contact:leeneo@xingzhihen.com
+* Site:xingzhihen.com
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+b {
+    font-weight: 400
+}
+
+q {
+    quotes: none;
+}
+
+.neo-hAlign {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.neo-logTitle {
+    border-bottom: 1px solid #999;
+    margin-top: 1rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-family: 宋体;
+    color: #ebf4fd;
+    color: #3f3f3f;
+}
+
+.neo-shadow {
+    background: #b8deff45;
+    width: 90%;
+    margin: 6rem auto;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0px #003e71;
+}
+
+
+/* 按钮样式 */
+
+.neo-btn {
+    padding: 5px 10px;
+    outline: 0;
+    border: 0;
+}
+
+.neo-lgBtn {
+    padding: .4rem 1.2rem;
+}
+
+.neo-btn-shadow {
+    color: #fff;
+    background-color: rgba(69, 140, 203, 0);
+    border-color: rgba(69, 140, 203, 0);
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(6, 42, 74, 0.56);
+    font-size: 1.6rem;
+}
+
+.neo-btn-halfCircle {
+    border-radius: 66px;
+}
+
+
+/* 支付按钮 */
+
+.btnPay {
+    color: #fff;
+    background: linear-gradient(145deg, #eea128, #F37B1D);
+}
+
+
+/* 自适应图片 */
+
+.imgWrap {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+    .imgWrap img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* 模态框 */
+
+.neo-bgModal {
+    display:none;
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    transition: all ease 1s;
+}
+
+.neo-modal {
+    display:none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 200;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+.neo-menuShadow{
+    box-shadow: 0px 0px 20px 1px #1a1e1d, inset 0px 2px 1px 0px rgba(194, 204, 227, .55), inset 0px -1px 4px 0px rgba(129, 133, 140, 0.5);
+    text-align: center;
+    background: linear-gradient(#434750,#181a26);
+    display: inline-block;
+    border-radius: 8px;
+    height: 60px;
+    line-height: 48px;
+    padding: 0 16px;
+}

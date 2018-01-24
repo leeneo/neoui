@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript" src="./core.js"></script>
+	<script type="text/javascript" src="./md5.js"></script>
+
+	<script type="text/javascript" src="./evpkdf.js"></script>
+	<script type="text/javascript" src="./enc-base64.js"></script>
+	<script type="text/javascript" src="./cipher-core.js"></script>
+
+	<script type="text/javascript" src="./aes.js"></script>
+	<script type="text/javascript" src="./hmac.js"></script>
+	<script type="text/javascript" src="./sha1.js"></script>
+	<script type="text/javascript" src="./sha256.js"></script>
+
+	<script type="text/javascript">
+      var md5 = CryptoJS.MD5("Message").toString(CryptoJS.enc.Hex);
+        console.log("md5 = %s", md5);
+
+        var sHA1 = CryptoJS.SHA1("Message").toString(CryptoJS.enc.Hex);
+        console.log("sHA1 = %s", sHA1);
+
+        var sHA256 = CryptoJS.SHA256("Message").toString(CryptoJS.enc.Hex);
+        console.log("sHA256 = %s", sHA256);
+
+        var hmacMD5 = CryptoJS.HmacMD5("Message", "Secret Passphrase").toString(CryptoJS.enc.Hex);
+        console.log("hmacMD5 = %s", hmacMD5);
+
+        var hmacSHA1 = CryptoJS.HmacSHA1("Message", "Secret Passphrase").toString(CryptoJS.enc.Hex);
+        console.log("hmacSHA1 = %s", hmacSHA1);
+
+        var aesEncrypt = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+        console.log("aesEncrypt = %s", aesEncrypt.iv.toString(CryptoJS.enc.Hex));
+
+        var aesDecrypt = CryptoJS.AES.decrypt(aesEncrypt, "Secret Passphrase");
+        console.log("aesDecrypt = %s", aesDecrypt.toString(CryptoJS.enc.Utf8));
+
+        // base64 encrypt
+        var rawStr = "hello world!";
+        var wordArray = CryptoJS.enc.Utf8.parse(rawStr);
+        var base64 = CryptoJS.enc.Base64.stringify(wordArray);
+        console.log('base64Encrypt = ', base64);
+
+        // base64 decrypt
+        var parsedWordArray = CryptoJS.enc.Base64.parse(base64);
+        var parsedStr = parsedWordArray.toString(CryptoJS.enc.Utf8);
+        console.log('base64Decrypt = ',parsedStr);	
+		</script>
+</body>
+</html>

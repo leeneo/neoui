@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/neoui.css">
+    <title>Document</title>
+    <style>
+        .neo-modal .conWrap {
+            padding-left: 20%;
+            color: #fff;
+            font-size: 1.4rem;
+            line-height: 40px;
+        }
+
+        .neo-modal .conWrap p {
+            text-align: left;
+        }
+
+        .neo-modal .conWrap i {
+            background: #FF9800;
+            border-radius: 100%;
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            text-align: center;
+            line-height: 26px;
+            font-style: normal;
+        }
+
+        .imgWrap {
+            text-align: right;
+        }
+
+        .imgWrap img {
+            height: 90px;
+        }
+
+        .neo-lgBtn {
+            padding: .4rem 1.2rem;
+            margin-top: 10%;
+            background: #fff0;
+            border: 1px dotted #fff;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btnShow">show modal</button>
+    <div class="neo-modal">
+        <div class="imgWrap">
+            <img src="./img/shareto.png" alt="">
+        </div>
+        <div class="conWrap">
+            <p>
+                <i>1</i> 点击右上角的</p>
+            <p>
+                <i>2</i> 选择在浏览器中打开</p>
+        </div>
+        <button class="neo-lgBtn neo-btn-halfCircle" id="btnSure">我知道了</button>
+    </div>
+    <div class="neo-bgModal "></div>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.btnShow').click(function(){
+                $('.neo-modal').fadeIn(500);
+                $('.neo-bgModal').fadeIn(500);              
+            })
+            $('#btnSure').click(function(){
+                $('.neo-modal').fadeOut(500);
+                $('.neo-bgModal').fadeOut(500);
+            })
+        })
+    </script>
+</body>
+
+</html>
