@@ -10,9 +10,12 @@
     list-style: none;
     text-decoration: none
 }
-html,body{
+
+html,
+body {
     min-height: 100%;
 }
+
 i {
     font-style: normal
 }
@@ -35,10 +38,10 @@ q {
     /* margin-top: 1rem; */
     /* height: 4rem; */
     text-align: center;
-    /* font-size: 1.8rem; */
     line-height: 4rem;
     font-family: '宋体';
     color: #ebf4fd;
+    font-size: 20px;
 }
 
 .neo-lightBlue {
@@ -56,6 +59,11 @@ q {
 
 
 /* 按钮样式 */
+
+.neo-btnWrap {
+    padding: 18px 10px;
+    margin-bottom: 18px;
+}
 
 .neo-btn {
     padding: 8px 16px;
@@ -80,7 +88,7 @@ q {
     border-color: rgba(69, 140, 203, 0)!important;
     border-radius: 4px!important;
     box-shadow: 0 0 4px 0 rgba(6, 42, 74, .56)!important;
-    font-size: 1.6rem
+    font-size: 16px
 }
 
 .neo-btn-halfCircle {
