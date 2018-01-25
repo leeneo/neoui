@@ -1,0 +1,38 @@
+/*
+* Author:Neo 
+* Contact:leeneo@xingzhihen.com
+* Site:xingzhihen.com
+*/
+nav {
+    min-height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .4rem;
+    z-index: 1000;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;}
+
+nav a {
+    margin-right: 4%;
+    font-size: 1.2rem;/*12px*/
+    display: inline-block;
+    color: #999;
+}
+
+nav a:last-child {
+    margin: 0;
+}
+
+nav a img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 2.6rem;
+    display: block;
+}
+
+.linkBlue {
+    color: #1296db !important;
+}
