@@ -45,7 +45,8 @@ q {
 }
 
 .neo-lightBlue {
-    color: #54c7f1!important
+    color: #54c7f1!important;
+    color: #4eb9f1!important;
 }
 
 .neo-shadow {
@@ -84,7 +85,8 @@ q {
 
 .neo-btn-shadow {
     color: #fff;
-    background-color: rgba(69, 140, 203, 0)!important;
+    background-color: rgba(69, 140, 203, 0)!important;    /*透明效果*/
+    background-color: rgb(127, 198, 223) !important;      /*小清新蓝效果*/
     border-color: rgba(69, 140, 203, 0)!important;
     border-radius: 4px!important;
     box-shadow: 0 0 4px 0 rgba(6, 42, 74, .56)!important;
@@ -109,7 +111,8 @@ q {
 .neo-inputBtn {
     color: #fff;
     background-color: #7fc6df;
-    text-shadow: 0 0 2px #266277
+    text-shadow: 0 0 2px #266277;
+    font-size: 15px;
 }
 
 
