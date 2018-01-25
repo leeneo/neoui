@@ -8,11 +8,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none
 }
-
+html,body{
+    min-height: 100%;
+}
 i {
-    font-style: normal;
+    font-style: normal
 }
 
 b {
@@ -20,24 +22,27 @@ b {
 }
 
 q {
-    quotes: none;
+    quotes: none
 }
 
 .neo-hAlign {
     margin: 0 auto;
-    text-align: center;
+    text-align: center
 }
 
 .neo-logTitle {
-    border-bottom: 1px solid #999;
-    margin-top: 1rem;
-    height: 4rem;
+    border-bottom: 1px solid #8dc5e0;
+    /* margin-top: 1rem; */
+    /* height: 4rem; */
     text-align: center;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     line-height: 4rem;
-    font-family: 宋体;
+    font-family: '宋体';
     color: #ebf4fd;
-    color: #3f3f3f;
+}
+
+.neo-lightBlue {
+    color: #54c7f1!important
 }
 
 .neo-shadow {
@@ -53,7 +58,10 @@ q {
 /* 按钮样式 */
 
 .neo-btn {
+    padding: 8px 16px;
     padding: 5px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
     outline: 0;
     border: 0;
 }
@@ -62,18 +70,23 @@ q {
     padding: .4rem 1.2rem;
 }
 
+.neo-btn-block {
+    width: 100%
+}
+
 .neo-btn-shadow {
     color: #fff;
-    background-color: rgba(69, 140, 203, 0);
-    border-color: rgba(69, 140, 203, 0);
-    border-radius: 4px;
-    box-shadow: 0 0 4px 0 rgba(6, 42, 74, 0.56);
-    font-size: 1.6rem;
+    background-color: rgba(69, 140, 203, 0)!important;
+    border-color: rgba(69, 140, 203, 0)!important;
+    border-radius: 4px!important;
+    box-shadow: 0 0 4px 0 rgba(6, 42, 74, .56)!important;
+    font-size: 1.6rem
 }
 
 .neo-btn-halfCircle {
     border-radius: 66px;
 }
+
 
 /* 半透明 */
 
@@ -85,6 +98,12 @@ q {
     background: linear-gradient(145deg, #eea128, #F37B1D);
 }
 
+.neo-inputBtn {
+    color: #fff;
+    background-color: #7fc6df;
+    text-shadow: 0 0 2px #266277
+}
+
 
 /* 自适应图片 */
 
@@ -94,16 +113,16 @@ q {
     width: 100%;
 }
 
-    .imgWrap img {
-        max-width: 100%;
-        height: auto;
-    }
+.imgWrap img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* 模态框 */
 
 .neo-bgModal {
-    display:none;
+    display: none;
     background: rgba(0, 0, 0, 0.6);
     left: 0;
     right: 0;
@@ -115,7 +134,7 @@ q {
 }
 
 .neo-modal {
-    display:none;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
@@ -127,10 +146,10 @@ q {
     transition: all ease 1s;
 }
 
-.neo-menuShadow{
+.neo-menuShadow {
     box-shadow: 0px 0px 20px 1px #1a1e1d, inset 0px 2px 1px 0px rgba(194, 204, 227, .55), inset 0px -1px 4px 0px rgba(129, 133, 140, 0.5);
     text-align: center;
-    background: linear-gradient(#434750,#181a26);
+    background: linear-gradient(#434750, #181a26);
     display: inline-block;
     border-radius: 8px;
     height: 60px;

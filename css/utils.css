@@ -75,7 +75,9 @@ form {
     width: 100px;
     transition: all 1s;
     -moz-transition: all 1s;
+    /* Firefox 4 */
     -webkit-transition: all 1s;
+    /* Safari 和 Chrome */
 }
 
     .neo-sub:hover {
