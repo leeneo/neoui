@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>多条件的媒体查询实现</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+
+		/* 手机样式 */
+		@media screen and (max-width:640) {
+			div {
+				background: red;
+			}
+		}
+
+		/* 平板样式 */
+		@media screen and (min-width:641px) and (max-width:1200px) {
+			div {
+				background: orange;
+			}
+
+			img {
+				box-shadow: 21px 21px 21px 1px;
+			}
+		}
+
+		@media screen and (min-width:1201px) {
+			div {
+				background: lightblue;
+			}
+
+			img {
+				box-shadow: 21px 21px 21px 1px;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--
+			当屏幕尺寸大于等于1000px 的时候让div 显示黄色
+			屏幕尺寸在800-1000px 之间的时候显示蓝色
+			小于800px 的时候显示红色
+		-->
+
+	<div>
+		<img src="./img/starskys.jpg" >
+		<img src="./img/starskys.jpg" alt="我是替代内容">
+	</div>
+
+</body>
+
+</html>
